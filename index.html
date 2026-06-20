@@ -1,0 +1,1256 @@
+<!DOCTYPE html>
+<!-- 
+  LESSON: How a webpage is built
+  Every webpage has 3 parts:
+  1. HTML  = the structure (like the walls of a house)
+  2. CSS   = the styling  (like the paint and furniture)
+  3. JS    = the behavior (like the lights turning on)
+-->
+<html lang="en">
+
+<head>
+  <!-- HEAD = things the browser needs to know but the user doesn't see -->
+  <meta charset="UTF-8"> <!-- tells browser to support all characters -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- makes it work on phones -->
+  <title>Golden Fork Restaurant Website</title> <!-- the tab title -->
+
+  <!-- Google Fonts - free fonts you load from the internet -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+
+  <!-- this Links to the CSS folder - "learn-homepage.css"-->
+   <link rel="stylesheet" href="style.css ">
+</head>
+
+<body>
+
+  <!-- ============================================
+       NAVBAR
+  ============================================ -->
+
+<nav class="navbar">
+
+    <div class="logo">✦ GOLDEN FORK</div>
+
+    <!-- Desktop Menu -->
+    <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#">Reservations</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+
+    <!-- Hamburger -->
+    <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#">Reservations</a>
+        <a href="#">Contact</a>
+    </div>
+    
+
+</nav>
+
+  <!-- ============================================
+       HERO SECTION
+  ============================================ -->
+  <section id="home"></section>
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <!-- Background blobs (decorative shapes) -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    
+
+    <!-- Content -->
+     <div class="hero-content">
+     <div class="hero-badge">✦ Golden fork — Golden taste</div>
+
+    <h1>
+      Experience great Taste<br>
+      <span class="gradient-text">faster than ever</span>
+    </h1>
+
+    <p>
+      Golden Fork serves you the best African and International cuisines — Get 
+      the best restaurant service sevice and be rewarded with a golden taste.
+    </p>
+
+    <div class="hero-buttons">
+      <button class="btn-primary">Reservations →</button>
+      <button class="btn-secondary">Place order</button>
+    </div>
+
+    <div class="hero-stats">
+      <div>
+        <div class="stat-num">100+</div>
+        <div class="stat-label">international cuisines</div>
+      </div>
+      <div>
+        <div class="stat-num">4.9★</div>
+        <div class="stat-label">Average rating</div>
+      </div>
+      <div>
+        <div class="stat-num">24/7</div>
+        <div class="stat-label">Service</div>
+      </div>
+    </div>
+    </div>
+    </div>
+    </section>
+  </section>
+
+     <!-- Scrolling brand strip -->
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <div class="marquee-item">✦ <span>GOLDEN FORK</span></div>
+      <div class="marquee-item">✦ <span>GOLDEN FORK</span></div>
+      <div class="marquee-item">✦ <span>GOLDEN FORK</span></div>
+      <div class="marquee-item">✦ <span>GOLDEN FORK</span></div>
+      <div class="marquee-item">✦ <span>GOLDEN FORK</span></div>
+      <div class="marquee-item">✦ <span>GOLDEN FORK </span></div>
+      <div class="marquee-item">✦ <span>GOLDEN FORK </span></div>
+      <div class="marquee-item">✦ <span>GOLDEN FORK </span></div>
+      <!-- duplicate for seamless loop -->
+      <div class="marquee-item">✦ <span>GOLDEN FORK </span></div>
+      <div class="marquee-item">✦ <span>GOLDEN FORK </span></div>
+      <div class="marquee-item">✦ <span>GOLDEN FORK </span></div>
+      <div class="marquee-item">✦ <span>GOLDEN FORK </span></div>
+      <div class="marquee-item">✦ <span>GOLDEN FORK </span></div>
+      <div class="marquee-item">✦ <span>GOLDEN FORK </span></div>
+      <div class="marquee-item">✦ <span>GOLDEN FORK </span></div>
+      <div class="marquee-item">✦ <span>GOLDEN FORK </span></div>
+<div class="marquee-item">✦ <span>GOLDEN FORK </span></div>
+<div class="marquee-item">✦ <span>GOLDEN FORK </span></div>
+<div class="marquee-item">✦ <span>GOLDEN FORK </span></div>
+<div class="marquee-item">✦ <span>GOLDEN FORK </span></div>
+<div class="marquee-item">✦ <span>GOLDEN FORK </span></div>
+<div class="marquee-item">✦ <span>GOLDEN FORK </span></div>
+<div class="marquee-item">✦ <span>GOLDEN FORK </span></div>
+<div class="marquee-item">✦ <span>GOLDEN FORK </span></div>
+<div class="marquee-item">✦ <span>GOLDEN FORK </span></div>
+<div class="marquee-item">✦ <span>GOLDEN FORK </span></div>
+<div class="marquee-item">✦ <span>GOLDEN FORK </span></div>
+<div class="marquee-item">✦ <span>GOLDEN FORK </span></div>
+<div class="marquee-item">✦ <span>GOLDEN FORK </span></div>
+
+    </div>
+  </div>
+
+
+   <!-- ============================================
+       FEATURE CARDS SECTION
+  ============================================ -->
+  <div class="section reveal">
+    <div class="section-label">Feature Dishes</div>
+    <h2 class="section-title">We showcase different dishes<br>that <span class="gradient-text">suits your taste</span></h2>
+    <p class="section-sub">Try out our best cuisines an experience an unforgettable taste. We have the best African and international cuisines you might ever wish to taste.</p>
+
+    <div class="cards-grid">
+
+      <!-- REGULAR CARD -->
+ <div class="dish-card">
+    <div class="dish-image">
+        <img src="images/food-bg.jpg" alt="Jollof Rice">
+    </div>
+
+    <div class="dish-content">
+        <div class="dish-top">
+            <h3 class="dish-title">Fried Rice</h3>
+            <span class="dish-price">N2000</span>
+        </div>
+
+        <p class="dish-desc">
+            Smoky Nigerian fried rice served with grilled chicken and desserts.
+        </p>
+    </div>
+</div>
+
+      <!-- REGULAR CARD -->
+ <div class="dish-card">
+    <div class="dish-image">
+        <img src="images/Egusi Soup - Sims Home Kitchen.jpg" alt="Jollof Rice">
+    </div>
+
+    <div class="dish-content">
+        <div class="dish-top">
+            <h3 class="dish-title">Egusi Soup</h3>
+            <span class="dish-price">N2500</span>
+        </div>
+
+        <p class="dish-desc">
+          Delicious and Meaty Egusi soup made by dedicated chefs and served with various swallows of your choice.
+        </p>
+    </div>
+</div>
+
+      <!-- REGULAR CARD -->
+ <div class="dish-card">
+    <div class="dish-image">
+        <img src="images/Okra Soup.jpg" alt="Jollof Rice">
+    </div>
+
+    <div class="dish-content">
+        <div class="dish-top">
+            <h3 class="dish-title">Okra Soup</h3>
+            <span class="dish-price">N2300</span>
+        </div>
+        <p class="dish-desc">
+          Okra soup made with sea food and served hot with fufu or semovita, other okra soup variants made with goat meat.
+
+        </p>
+    </div>
+</div>
+
+      <!-- REGULAR CARD -->
+ <div class="dish-card">
+    <div class="dish-image">
+        <img src="images/plate-sw.jpg" alt="Jollof Rice">
+    </div>
+
+    <div class="dish-content">
+        <div class="dish-top">
+            <h3 class="dish-title">Fufu and meaty soup</h3>
+            <span class="dish-price">N2500</span>
+        </div>
+
+        <p class="dish-desc">
+          Mouth watering melon soup with beef or goat meat, servd with freshly prepared fufu.
+        </p>
+    </div>
+</div>
+
+      <!-- REGULAR CARD -->
+ <div class="dish-card">
+    <div class="dish-image">
+        <img src="images/Delicious stir fry spaghetti cooked with meatballs and veggies✨.jpg" alt="Jollof Rice">
+    </div>
+
+    <div class="dish-content">
+        <div class="dish-top">
+            <h3 class="dish-title">Delicious stir fry spaghetti</h3>
+            <span class="dish-price">N1950</span>
+        </div>
+
+        <p class="dish-desc">
+          African stir fry spaghetti, with meat balls served wiith desserts and fruit juice.
+        </p>
+    </div>
+</div>
+
+      <!-- REGULAR CARD -->
+ <div class="dish-card">
+    <div class="dish-image">
+        <img src="images/Steaming Jollof Rice with Grilled Chicken in Black Ceramic Bowl (Afro-Food Stock Image).jpg" alt="Jollof Rice">
+    </div>
+
+    <div class="dish-content">
+        <div class="dish-top">
+            <h3 class="dish-title">Steaming Jollof Rice with Chicken</h3>
+            <span class="dish-price">N2000</span>
+        </div>
+
+        <p class="dish-desc">
+            Steaming Nigerian jollof rice served with chicken drum sticks and salads.
+        </p>
+    </div>
+</div>
+
+    </div>
+  </div>
+
+
+  <!-- ABOUT SECTION -->
+<section id="about">
+    <section class="about-section reveal">
+
+    <div class="section-label">ABOUT US</div>
+
+    <h2 class="section-title">
+        Rooted in African Tradition,<br>
+        Crafted for <span class="gradient-text">Modern Taste</span>
+    </h2>
+
+    <p class="section-sub">
+        Golden Fork combines authentic African hospitality, world-class culinary
+        expertise, and premium ingredients to create unforgettable dining experiences.
+    </p>
+
+    <!-- HISTORY -->
+    <div class="about-row">
+        <div class="about-image">
+            <img src="images/restaurant_interior.jpg" alt="">
+        </div>
+
+        <div class="about-text">
+            <span class="about-tag">OUR STORY</span>
+
+            <h3>A Legacy Of Flavor Since 2010</h3>
+
+            <p>
+                What began as a family-owned kitchen has grown into one of the
+                region's most loved dining destinations. Our journey is built on
+                passion, tradition, and the desire to bring people together through food.
+            </p>
+        </div>
+    </div>
+
+    <!-- CHEF -->
+    <div class="about-row reverse">
+
+        <div class="about-image">
+            <img src="images/enhanced chef image for flyer design.jpg" alt="">
+        </div>
+
+        <div class="about-text">
+            <span class="about-tag">CHEF'S PHILOSOPHY</span>
+
+            <h3>Every Plate Tells A Story</h3>
+
+            <p>
+                Our chefs blend authentic African recipes with modern culinary
+                techniques. Every ingredient, texture, and presentation is carefully
+                selected to create a memorable dining experience.
+            </p>
+        </div>
+
+    </div>
+
+    <!-- INGREDIENTS -->
+    <div class="about-row">
+
+        <div class="about-image">
+            <img src="images/Restaurant ingredients and condiment.jpg" alt="">
+        </div>
+
+        <div class="about-text">
+            <span class="about-tag">FRESH INGREDIENTS</span>
+
+            <h3>Quality Starts At The Source</h3>
+
+            <p>
+                From locally sourced vegetables to premium cuts of meat and exotic
+                spices, we choose only the finest ingredients to ensure exceptional
+                flavor in every dish.
+            </p>
+        </div>
+
+    </div>
+
+    <!-- STATS -->
+
+    <div class="about-stats">
+
+      <div class="about-stat">
+    <h4 class="counter" data-target="15">0</h4>
+    <span>Years Experience</span>
+</div>
+
+<div class="about-stat">
+    <h4 class="counter" data-target="50">0</h4>
+    <span>Signature Dishes</span>
+</div>
+
+<div class="about-stat">
+    <h4 class="counter" data-target="10000">0</h4>
+    <span>Happy Guests</span>
+</div>
+
+<div class="about-stat">
+    <h4 class="counter" data-target="100">0</h4>
+    <span>Fresh Ingredients</span>
+</div>
+
+    </div>
+
+</section>
+</section>
+
+
+
+<!-- MENU SECTION CODE -->
+<!-- ================= MENU SECTION ================= -->
+
+<!-- ================= MENU SECTION ================= -->
+
+<section id="menu" class="ms reveal">
+
+  <div class="ms-head">
+    <div class="section-label">Explore Our Menu</div>
+    <h2 class="section-title">Every dish,<br><span class="gradient-text">one tap away</span></h2>
+    <p class="section-sub">Scroll through each category and tap any dish to see the full preview.</p>
+  </div>
+
+  <!-- AFRICAN SIGNATURES -->
+  <div class="shelf">
+    <div class="shelf-header">
+      <div class="shelf-label">African Signatures</div>
+      <div class="shelf-count">6 dishes</div>
+    </div>
+    <div class="thumb-row">
+      <div class="thumb" data-cat="African Signatures" data-title="Smoky Jollof Royale" data-price="₦4,500" data-rating="4.9" data-desc="Traditional smoky jollof rice slow-cooked in a party pot, served with flame-grilled drumsticks and a side of coleslaw." data-img="images/Steaming Jollof Rice with Grilled Chicken in Black Ceramic Bowl (Afro-Food Stock Image).jpg">
+        <img src="images/Steaming Jollof Rice with Grilled Chicken in Black Ceramic Bowl (Afro-Food Stock Image).jpg" alt="Jollof Rice">
+        <div class="thumb-price">₦4,500</div><div class="thumb-star">★ 4.9</div><div class="thumb-label">Smoky Jollof Royale</div>
+      </div>
+      <div class="thumb" data-cat="African Signatures" data-title="Egusi Royal Bowl" data-price="₦2,500" data-rating="4.8" data-desc="Rich ground melon seed soup with premium beef cuts and leafy vegetables. Served with swallow of your choice." data-img="images/Egusi Soup - Sims Home Kitchen.jpg">
+        <img src="images/Egusi Soup - Sims Home Kitchen.jpg" alt="Egusi">
+        <div class="thumb-price">₦2,500</div><div class="thumb-star">★ 4.8</div><div class="thumb-label">Egusi Royal Bowl</div>
+      </div>
+      <div class="thumb" data-cat="African Signatures" data-title="Okra Seafood Bowl" data-price="₦2,300" data-rating="4.7" data-desc="Fresh draw okra cooked with assorted seafood — prawns, crab, and periwinkle — finished with local spices and palm oil." data-img="images/Okra Soup.jpg">
+        <img src="images/Okra Soup.jpg" alt="Okra">
+        <div class="thumb-price">₦2,300</div><div class="thumb-star">★ 4.7</div><div class="thumb-label">Okra Seafood Bowl</div>
+      </div>
+      <div class="thumb" data-cat="African Signatures" data-title="Fufu & Meaty Soup" data-price="₦2,500" data-rating="4.8" data-desc="Freshly pounded cassava fufu served with a hearty melon-based soup packed with beef and assorted meats." data-img="images/plate-sw.jpg">
+        <img src="images/plate-sw.jpg" alt="Fufu">
+        <div class="thumb-price">₦2,500</div><div class="thumb-star">★ 4.8</div><div class="thumb-label">Fufu & Meaty Soup</div>
+      </div>
+      <div class="thumb" data-cat="African Signatures" data-title="Fried Rice Special" data-price="₦2,000" data-rating="4.6" data-desc="Smoky Nigerian fried rice cooked with mixed vegetables, served with grilled chicken and a fresh fruit dessert." data-img="images/food-bg.jpg">
+        <img src="images/food-bg.jpg" alt="Fried Rice">
+        <div class="thumb-price">₦2,000</div><div class="thumb-star">★ 4.6</div><div class="thumb-label">Fried Rice Special</div>
+      </div>
+      <div class="thumb" data-cat="African Signatures" data-title="Amala and Ewedu" data-price="₦2,400" data-rating="4.9" data-desc="Ewedu soup served with Amala, and paired with light chops." data-img="images/Amala and Ewedu.jpg">
+        <img src="images/Amala and Ewedu.jpg" alt="Amala and Ewedu">
+        <div class="thumb-price">₦2,400</div><div class="thumb-star">★ 4.9</div><div class="thumb-label">Egusi Royal Bowl</div>
+      </div>
+    </div>
+  </div>
+  <div class="shelf-divider"></div>
+
+  <!-- STARTERS -->
+  <div class="shelf">
+    <div class="shelf-header">
+      <div class="shelf-label">Starters & Small Bites</div>
+      <div class="shelf-count">4 dishes</div>
+    </div>
+    <div class="thumb-row">
+      <div class="thumb" data-cat="Starters & Small Bites" data-title="Suya Skewers" data-price="₦1,800" data-rating="4.9" data-desc="Tender beef strips marinated overnight in suya spice — groundnut, ginger, paprika — char-grilled to perfection with sliced onions." data-img="images/suya.jpg">
+        <img src="images/suya.jpg" alt="Suya">
+        <div class="thumb-price">₦1,800</div><div class="thumb-star">★ 4.9</div><div class="thumb-label">Suya Skewers</div>
+      </div>
+      <div class="thumb" data-cat="Starters & Small Bites" data-title="Plantain Bites" data-price="₦1,200" data-rating="4.7" data-desc="Golden sweet plantain slices fried until caramelized and crispy, served with our house chilli and tomato dipping sauce." data-img="images/plantain.jpg">
+        <img src="images/plantain.jpg" alt="Plantain">
+        <div class="thumb-price">₦1,200</div><div class="thumb-star">★ 4.7</div><div class="thumb-label">Plantain Bites</div>
+      </div>
+      <div class="thumb" data-cat="Starters & Small Bites" data-title="Peppered Gizzard" data-price="₦1,600" data-rating="4.8" data-desc="Slow-cooked chicken gizzard tossed in a spicy red pepper sauce with scotch bonnet and bell peppers." data-img="images/Condimente.jpg">
+        <img src="images/Condimente.jpg" alt="Gizzard">
+        <div class="thumb-price">₦1,600</div><div class="thumb-star">★ 4.8</div><div class="thumb-label">Peppered Gizzard</div>
+      </div>
+      <div class="thumb" data-cat="Starters & Small Bites" data-title="Spring Rolls" data-price="₦1,400" data-rating="4.6" data-desc="Crispy golden rolls filled with seasoned minced chicken, carrots and cabbage. Served with a sweet chilli dip." data-img="images/Restaurant ingredients and condiment.jpg">
+        <img src="images/Restaurant ingredients and condiment.jpg" alt="Spring Rolls">
+        <div class="thumb-price">₦1,400</div><div class="thumb-star">★ 4.6</div><div class="thumb-label">Spring Rolls</div>
+      </div>
+    </div>
+  </div>
+  <div class="shelf-divider"></div>
+
+  <!-- MAINS -->
+  <div class="shelf">
+    <div class="shelf-header">
+      <div class="shelf-label">Main Courses</div>
+      <div class="shelf-count">3 dishes</div>
+    </div>
+    <div class="thumb-row">
+      <div class="thumb" data-cat="Main Courses" data-title="Tilapia Supreme" data-price="₦5,200" data-rating="4.9" data-desc="Whole fresh tilapia marinated in herbs, slow-roasted until tender, served with steamed rice and a rich pepper sauce." data-img="images/plate-sw.jpg">
+        <img src="images/plate-sw.jpg" alt="Tilapia">
+        <div class="thumb-price">₦5,200</div><div class="thumb-star">★ 4.9</div><div class="thumb-label">Tilapia Supreme</div>
+      </div>
+      <div class="thumb" data-cat="Main Courses" data-title="Lamb Chops Deluxe" data-price="₦7,500" data-rating="4.8" data-desc="Premium slow-grilled lamb chops with a rosemary and garlic crust, served with roasted baby potatoes and mint jelly." data-img="images/food-bg.jpg">
+        <img src="images/food-bg.jpg" alt="Lamb Chops">
+        <div class="thumb-price">₦7,500</div><div class="thumb-star">★ 4.8</div><div class="thumb-label">Lamb Chops Deluxe</div>
+      </div>
+      <div class="thumb" data-cat="Main Courses" data-title="Stir Fry Spaghetti" data-price="₦1,950" data-rating="4.7" data-desc="African stir fry spaghetti with meatballs and fresh vegetables, served with desserts and fruit juice." data-img="images/Delicious stir fry spaghetti cooked with meatballs and veggies✨.jpg">
+        <img src="images/Delicious stir fry spaghetti cooked with meatballs and veggies✨.jpg" alt="Spaghetti">
+        <div class="thumb-price">₦1,950</div><div class="thumb-star">★ 4.7</div><div class="thumb-label">Stir Fry Spaghetti</div>
+      </div>
+    </div>
+  </div>
+  <div class="shelf-divider"></div>
+
+  <!-- DESSERTS -->
+  <div class="shelf">
+    <div class="shelf-header">
+      <div class="shelf-label">Desserts</div>
+      <div class="shelf-count">2 dishes</div>
+    </div>
+    <div class="thumb-row">
+      <div class="thumb" data-cat="Desserts" data-title="Coconut Cream Cake" data-price="₦1,900" data-rating="4.8" data-desc="Light sponge cake layered with toasted coconut and whipped cream, served chilled with a dusting of cocoa powder." data-img="images/Condimente.jpg">
+        <img src="images/Condimente.jpg" alt="Coconut Cake">
+        <div class="thumb-price">₦1,900</div><div class="thumb-star">★ 4.8</div><div class="thumb-label">Coconut Cream Cake</div>
+      </div>
+      <div class="thumb" data-cat="Desserts" data-title="Choco Lava Delight" data-price="₦2,100" data-rating="4.9" data-desc="Warm molten chocolate cake with a flowing dark chocolate centre, paired with a scoop of vanilla bean ice cream." data-img="images/Restaurant ingredients and condiment.jpg">
+        <img src="images/Restaurant ingredients and condiment.jpg" alt="Choco Lava">
+        <div class="thumb-price">₦2,100</div><div class="thumb-star">★ 4.9</div><div class="thumb-label">Choco Lava Delight</div>
+      </div>
+    </div>
+  </div>
+  <div class="shelf-divider"></div>
+
+  <!-- INTERNATIONAL -->
+  <div class="shelf">
+    <div class="shelf-header">
+      <div class="shelf-label">International Cuisine</div>
+      <div class="shelf-count">2 dishes</div>
+    </div>
+    <div class="thumb-row">
+      <div class="thumb" data-cat="International Cuisine" data-title="Truffle Pasta" data-price="₦6,500" data-rating="4.8" data-desc="Hand-rolled pasta tossed in a rich black truffle and butter sauce, finished with shaved parmesan and fresh herbs." data-img="images/Restaurant ingredients and condiment.jpg">
+        <img src="images/Restaurant ingredients and condiment.jpg" alt="Truffle Pasta">
+        <div class="thumb-price">₦6,500</div><div class="thumb-star">★ 4.8</div><div class="thumb-label">Truffle Pasta</div>
+      </div>
+      <div class="thumb" data-cat="International Cuisine" data-title="Grilled Atlantic Salmon" data-price="₦8,500" data-rating="4.9" data-desc="Fresh Atlantic salmon with herb butter glaze, capers, lemon-dill cream sauce and roasted asparagus." data-img="images/Egusi Soup - Sims Home Kitchen.jpg">
+        <img src="images/Egusi Soup - Sims Home Kitchen.jpg" alt="Salmon">
+        <div class="thumb-price">₦8,500</div><div class="thumb-star">★ 4.9</div><div class="thumb-label">Grilled Atlantic Salmon</div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- MODAL OVERLAY -->
+<div class="modal-overlay" id="menuModal">
+  <div class="modal-box">
+    <button class="modal-close" id="modalClose">✕</button>
+    <div class="modal-img">
+      <img id="mImg" src="" alt="">
+      <div class="modal-img-fade"></div>
+      <div class="modal-cat" id="mCat"></div>
+    </div>
+    <div class="modal-body">
+      <div class="modal-rating" id="mRating"></div>
+      <div class="modal-title" id="mTitle"></div>
+      <div class="modal-desc" id="mDesc"></div>
+      <div class="modal-footer">
+        <div class="modal-price" id="mPrice"></div>
+        <button class="btn-primary">Reserve & Order →</button>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+
+<!-- CHEF SECTION -->
+
+<section class="chef-section reveal">
+
+    <div class="chef-grid">
+
+        <div class="chef-image-wrap">
+
+            <div class="chef-glow"></div>
+
+            <div class="chef-badge">
+                <h4>15+</h4>
+                <span>Years Experience</span>
+            </div>
+
+            <img src="images/Réceptionniste hôtel et restaurant.jpg" alt="Executive Chef" class="chef-image">
+
+        </div>
+
+        <div class="chef-content reveal-stagger">
+
+            <span class="section-label">OUR CHEF</span>
+
+            <h2 class="section-title">
+                Meet The Culinary Artist Behind
+                <span class="gradient-text">Golden Fork</span>
+            </h2>
+
+            <p class="section-sub">
+                Every memorable dining experience begins with a vision.
+                Our Executive Chef blends authentic African heritage,
+                premium ingredients, and modern culinary artistry to
+                create dishes that leave lasting impressions.
+            </p>
+
+            <div class="chef-philosophy">
+
+                <div class="quote-icon">❝</div>
+
+                <p>
+                    Food is more than nourishment.
+                    It is culture, memory, and connection.
+                    Every dish should tell a story worth remembering.
+                </p>
+
+            </div>
+
+            <div class="chef-signature">
+
+                <h4>Chef Kwame Mensah</h4>
+
+                <span>Executive Chef & Culinary Director</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- GALLERY SECTION-->
+<section id="gallery">
+<section class="gallery-section">
+
+  <div class="gallery-header">
+    <h2 class="section-title">
+      Our Gallery, 
+      <span class="gradient-text">our Passion</span>
+    </h2>
+
+    <p class="section-sub">
+      Explore our signature dishes, elegant dining spaces,
+      and unforgettable culinary experiences.
+    </p>
+  </div>
+
+  <!-- CINEMATIC HERO SLIDER -->
+
+  <div class="cinematic-slider">
+
+    <div class="slide active">
+      <img src="images/Chicken Spring Rolls Recipe - Cubes N Juliennes.jpg" alt="">
+      <div class="slide-overlay">
+        <span>Signature Collection</span>
+        <h3>Where Every Dish Becomes Art</h3>
+      </div>
+    </div>
+
+    <div class="slide">
+      <img src="images/restaurant_interior.jpg" alt="">
+      <div class="slide-overlay">
+        <span>Luxury Dining</span>
+        <h3>An Atmosphere Designed To Impress</h3>
+      </div>
+    </div>
+
+    <div class="slide">
+      <img src="images/Transform Your Restaurant Into a Premium Dining Destination!.jpg" alt="">
+      <div class="slide-overlay">
+        <span>Chef Specials</span>
+        <h3>Flavours Inspired By Tradition</h3>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- DISHES SLIDER -->
+
+  <div class="gallery-block">
+
+    <div class="gallery-title-row">
+      <h3>Signature Dishes</h3>
+
+      <div class="gallery-controls">
+        <button class="gallery-prev">←</button>
+        <button class="gallery-next">→</button>
+      </div>
+
+    </div>
+
+    <div class="gallery-row">
+
+      <div class="gallery-card">
+        <img src="images/Banga Soup Recipe (Delta-Style Palm Nut Soup).jpg">
+      </div>
+
+      <div class="gallery-card">
+        <img src="images/Peppered Gizzard.jpg">
+      </div>
+
+      <div class="gallery-card">
+        <img src="images/ogbono soup recipe.jpg">
+      </div>
+
+      <div class="gallery-card">
+        <img src="images/food-bg.jpg">
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- INTERIOR SLIDER -->
+
+  <div class="gallery-block">
+
+    <div class="gallery-title-row">
+      <h3>Restaurant Interior</h3>
+
+      <div class="gallery-controls">
+        <button class="gallery-prev">←</button>
+        <button class="gallery-next">→</button>
+      </div>
+
+    </div>
+
+    <div class="gallery-row">
+
+      <div class="gallery-card">
+        <img src="images/Transform Your Restaurant Into a Premium Dining Destination!.jpg">
+      </div>
+
+      <div class="gallery-card">
+        <img src="images/restaurant_interior.jpg">
+      </div>
+
+      <div class="gallery-card">
+        <img src="images/interior3.jpg">
+      </div>
+
+      <div class="gallery-card">
+        <img src="images/interior4.jpg">
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+</section>
+
+
+
+<!-- TESTIMONIAL SECTION -->
+ <!-- v class="section-label">Feature Dishes</div>
+    <h2 class="section-title">We showcase different dishes<br>that <span class="gradient-text">suits your taste</span></h2>
+    <p class="section-sub" -->
+
+<section class="testimonials-section">
+
+    <div class="gallery-header">
+        <h2 class="section-title">
+            What Our Guests
+            <span class="gradient-text">Are Saying</span>
+        </h2>
+
+        <p class="section-sub">
+            Every review tells a story of exceptional service,
+            unforgettable flavors and memorable dining experiences.
+        </p>
+    </div>
+
+    <div class="testimonial-wrapper">
+
+        <div class="testimonial-track">
+
+            <!-- CARD -->
+
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+
+                <p>
+                    The atmosphere was incredible and every dish felt
+                    like a work of art. Easily one of the best dining
+                    experiences we've had.
+                </p>
+
+                <div class="reviewer">
+                    <img src="images/Réceptionniste hôtel et restaurant.jpg">
+                    <div>
+                        <h4>Sarah Johnson</h4>
+                        <span>Food Blogger</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD -->
+
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+
+                <p>
+                    From the first bite to dessert, everything was
+                    flawless. The chef's creativity truly shines.
+                </p>
+
+                <div class="reviewer">
+                    <img src="images/person2.jpg">
+                    <div>
+                        <h4>Michael Ross</h4>
+                        <span>Business Executive</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD -->
+
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+
+                <p>
+                    Elegant ambience, outstanding service and
+                    unforgettable flavors. Highly recommended.
+                </p>
+
+                <div class="reviewer">
+                    <img src="images/person3.jpg">
+                    <div>
+                        <h4>Emily Carter</h4>
+                        <span>Travel Writer</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Duplicate cards for infinite effect -->
+
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+
+                <p>
+                    Every detail felt intentional. We will definitely
+                    return with friends and family.
+                </p>
+
+                <div class="reviewer">
+                    <img src="images/person4.jpg">
+                    <div>
+                        <h4>Daniel Smith</h4>
+                        <span>Guest</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ============================================
+       CTA SECTION
+  ============================================ -->
+ <div class="cta-section reveal">
+
+    <h2>
+        Reserve Your Table For An
+        <span class="gradient-text">Unforgettable Dining Experience</span>
+    </h2>
+
+    <p>
+        Fresh ingredients, world-class chefs, and a warm atmosphere.
+        Book your table today and enjoy a memorable meal with family and friends.
+    </p>
+
+    <button class="btn-primary">
+        Reserve a Table →
+    </button>
+
+</div>
+
+
+      <!-- ════════════════════════════════════════
+     FAQ ACCORDION
+════════════════════════════════════════ -->
+<div class="secondbg-section">
+
+<div class="faq-section">
+  <div class="section-wrap reveal">
+    <div class="section-label">FAQ</div>
+    <h2 class="section-title">Questions<br><span class="gradient-text">answered.</span></h2>
+
+    <div class="faq-wrap">
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+             Do I need a reservation?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">Reservations are recommended for dinner service and weekends to ensure availability.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+        Do you offer vegetarian options?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">Yes, our menu includes a variety of vegetarian and plant-based dishes prepared with fresh seasonal ingredients.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Can I host private events?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">Absolutely. We offer private dining experiences for birthdays, corporate events, and special celebrations.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+         Is takeaway available?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">Yes, selected menu items are available for takeaway and pickup.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+            What are your opening hours?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">Monday–Sunday, 11:00 AM – 11:00 PM.</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!-- CONTACT SECTION -->
+
+<section class="contact-section section" id="contact">
+
+    <div class="section-label">GET IN TOUCH</div>
+    <h2 class="section-title">Reserve Your Perfect Dining Experience</h2>
+    <p class="section-sub">
+        Whether you're planning a romantic dinner, family gathering,
+        or private celebration, we're here to make every moment memorable.
+    </p>
+
+    <div class="contact-grid">
+
+        <!-- LEFT SIDE -->
+        <div class="contact-info">
+
+            <div class="contact-card">
+                <span>📍</span>
+                <div>
+                    <h4>Location</h4>
+                    <p>123 Culinary Street, Lagos, Nigeria</p>
+                </div>
+            </div>
+
+            <div class="contact-card">
+                <span>📞</span>
+                <div>
+                    <h4>Phone</h4>
+                    <p>+234 800 000 0000</p>
+                </div>
+            </div>
+
+            <div class="contact-card">
+                <span>✉️</span>
+                <div>
+                    <h4>Email</h4>
+                    <p>hello@goldenfork.com</p>
+                </div>
+            </div>
+
+            <div class="contact-card">
+                <span>🕒</span>
+                <div>
+                    <h4>Opening Hours</h4>
+                    <p>Mon - Sun : 11:00 AM - 11:00 PM</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="contact-form-card">
+
+            <form class="contact-form">
+
+                <div class="form-row">
+                    <input type="text" placeholder="Your Name">
+                    <input type="email" placeholder="Email Address">
+                </div>
+
+                <div class="form-row">
+                    <input type="date">
+                    <input type="number" placeholder="Guests">
+                </div>
+
+                <textarea rows="6" placeholder="Special requests or message..."></textarea>
+
+                <button class="btn-primary">
+                    Reserve Table
+                </button>
+
+            </form>
+
+        </div>
+
+    </div><br><br>
+
+    <!-- MAP -->
+
+     <div class="section-label">FIND US</div>
+<h3 style="margin-bottom:20px;">Visit Our Restaurant</h3>
+
+    <div class="map-box">
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31786.86050581808!2d7.676229190181528!3d5.206374454356899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1042b1898d509ed5%3A0xd6ccaf120010db97!2sIkot%20Ekpene%20V11%2C%20Akwa%20Ibom!5e0!3m2!1sen!2sng!4v1781970091203!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+</section>
+
+
+  <!-- ============================================
+       FOOTER
+  ============================================ -->
+  <footer>
+  <div class="footer-top">
+    <div>
+      <div class="logo">✦ GOLDEN FORK</div>
+      <div class="footer-desc">The modern design system for developers who care about craft. Every trend, every tool, all in one place.</div>
+    </div>
+    <div class="footer-col">
+      <h4>Product</h4>
+      <ul>
+        <li><a href="#">Components</a></li>
+        <li><a href="#">Templates</a></li>
+        <li><a href="#">Animations</a></li>
+        <li><a href="#">Figma Kit</a></li>
+        <li><a href="#">Changelog</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="#">Documentation</a></li>
+        <li><a href="#">Tutorials</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Community</a></li>
+        <li><a href="#">GitHub</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 NOVA Inc. All rights reserved.</span>
+    <span>Made with HTML · CSS · JS</span>
+  </div>
+</footer>
+
+<script>
+         // ── Scroll reveal ──
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) e.target.classList.add('visible');
+    });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.reveal, .reveal-stagger').forEach(el => io.observe(el));
+
+
+      // ── FAQ accordion ──
+  function toggleFaq(btn) {
+    const item = btn.closest('.faq-item');
+    const isOpen = item.classList.contains('open');
+    // close all
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+    // open clicked one if it was closed
+    if (!isOpen) item.classList.add('open');
+  }
+
+  // - hamburger nav script -
+  const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobileMenu');
+
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    mobileMenu.classList.toggle('active');
+});
+
+// stats animation 
+const counters = document.querySelectorAll(".counter");
+
+const counterObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const counter = entry.target;
+      const target = +counter.dataset.target;
+      let count = 0;
+
+      const updateCounter = () => {
+        const increment = target / 80;
+
+        if (count < target) {
+          count += increment;
+
+          if (target >= 1000) {
+            counter.textContent = Math.floor(count).toLocaleString();
+          } else {
+            counter.textContent = Math.floor(count);
+          }
+
+          requestAnimationFrame(updateCounter);
+        } else {
+          if (target === 10000) counter.textContent = "10K+";
+          else if (target === 100) counter.textContent = "100%";
+          else counter.textContent = target + "+";
+        }
+      };
+
+      updateCounter();
+      counterObserver.unobserve(counter);
+    }
+  });
+}, { threshold: 0.5 });
+
+counters.forEach(counter => {
+  counterObserver.observe(counter);
+});
+
+
+/* MENU SECTION SCRIPT *//* ── Dish Modal Menu ── */
+const menuModal   = document.getElementById('menuModal');
+const mImg        = document.getElementById('mImg');
+const mCat        = document.getElementById('mCat');
+const mTitle      = document.getElementById('mTitle');
+const mDesc       = document.getElementById('mDesc');
+const mPrice      = document.getElementById('mPrice');
+const mRating     = document.getElementById('mRating');
+
+function openDishModal(thumb) {
+  mImg.src              = thumb.dataset.img;
+  mCat.textContent      = thumb.dataset.cat;
+  mTitle.textContent    = thumb.dataset.title;
+  mDesc.textContent     = thumb.dataset.desc;
+  mPrice.textContent    = thumb.dataset.price;
+  mRating.innerHTML     = '★ ' + thumb.dataset.rating + ' &nbsp;<span style="color:var(--text-dim);font-weight:400">rating</span>';
+  menuModal.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeDishModal() {
+  menuModal.classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+document.getElementById('modalClose').addEventListener('click', closeDishModal);
+menuModal.addEventListener('click', e => { if (e.target === menuModal) closeDishModal(); });
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeDishModal(); });
+
+document.querySelectorAll('.thumb').forEach(thumb => {
+  thumb.addEventListener('click', () => openDishModal(thumb));
+});
+
+// CHEF SECTION 
+
+const reveals = document.querySelectorAll(".reveal");
+
+const observer = new IntersectionObserver((entries)=>{
+
+    entries.forEach(entry=>{
+
+        if(entry.isIntersecting){
+
+            entry.target.classList.add("visible");
+
+        }
+
+    });
+
+},{
+    threshold:0.2
+});
+
+reveals.forEach(el=>{
+    observer.observe(el);
+});
+
+
+// GALLERY SECTION SCRIPT 
+/* CINEMATIC AUTO SLIDER */
+
+const slides = document.querySelectorAll(".slide");
+
+let currentSlide = 0;
+
+setInterval(() => {
+
+  slides[currentSlide].classList.remove("active");
+
+  currentSlide++;
+
+  if(currentSlide >= slides.length){
+      currentSlide = 0;
+  }
+
+  slides[currentSlide].classList.add("active");
+
+}, 5000);
+
+
+/* SCROLL SLIDERS */
+
+document.querySelectorAll(".gallery-block").forEach(block => {
+
+  const row = block.querySelector(".gallery-row");
+
+  const prev = block.querySelector(".gallery-prev");
+
+  const next = block.querySelector(".gallery-next");
+
+  next.addEventListener("click", () => {
+      row.scrollBy({
+          left:400,
+          behavior:"smooth"
+      });
+  });
+
+  prev.addEventListener("click", () => {
+      row.scrollBy({
+          left:-400,
+          behavior:"smooth"
+      });
+  });
+
+});
+
+// TESTIMONIAL SECTION SCRIPT 
+
+const testimonialTrack =
+document.querySelector(".testimonial-track");
+
+document
+.querySelector(".test-next")
+.addEventListener("click",()=>{
+
+    testimonialTrack.scrollBy({
+        left:400,
+        behavior:"smooth"
+    });
+
+});
+
+document
+.querySelector(".test-prev")
+.addEventListener("click",()=>{
+
+    testimonialTrack.scrollBy({
+        left:-400,
+        behavior:"smooth"
+    });
+
+});
+
+</script>
+  </body>
+  </html>
