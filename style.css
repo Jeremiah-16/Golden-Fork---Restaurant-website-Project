@@ -2046,6 +2046,46 @@
       font-family: 'JetBrains Mono', monospace;
     }
 
+    .footer-social{
+
+display:flex;
+gap:15px;
+margin-top:28px;
+
+}
+
+.footer-social a{
+
+width:42px;
+height:42px;
+display:flex;
+align-items:center;
+justify-content:center;
+
+border-radius:50%;
+
+background:rgba(255,255,255,.06);
+
+color:white;
+
+text-decoration:none;
+
+transition:.35s;
+
+font-size:17px;
+
+}
+
+.footer-social a:hover{
+
+background:var(--purple);
+
+transform:translateY(-5px);
+
+box-shadow:0 10px 25px rgba(140,82,255,.35);
+
+}
+
      /* ================================================
        SCROLL REVEAL
     ================================================ */
@@ -2139,3 +2179,84 @@
         height:42px;
     }
 }
+/* ==========================================
+   BACK TO TOP
+========================================== */
+
+#backToTop{
+
+position:fixed;
+
+right:30px;
+
+bottom:30px;
+
+width:56px;
+
+height:56px;
+
+border:none;
+
+border-radius:50%;
+
+cursor:pointer;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+font-size:18px;
+
+color:#fff;
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(16px);
+
+-webkit-backdrop-filter:blur(16px);
+
+border:1px solid rgba(255,255,255,.12);
+
+box-shadow:0 12px 30px rgba(0,0,0,.35);
+
+transition:
+opacity .35s,
+transform .35s,
+background .35s;
+
+opacity:0;
+
+visibility:hidden;
+
+transform:translateY(20px) scale(.9);
+
+z-index:9999;
+
+}
+
+#backToTop:hover{
+
+background:linear-gradient(
+135deg,
+var(--purple),
+var(--purple-light)
+);
+
+transform:translateY(-6px);
+
+box-shadow:0 15px 40px rgba(255,107,44,.35);
+
+}
+
+#backToTop.show{
+
+opacity:1;
+
+visibility:visible;
+
+transform:translateY(0);
+
+}
+
