@@ -634,7 +634,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
   <div class="cinematic-slider">
 
     <div class="slide active">
-      <img src="images/Chicken Spring Rolls Recipe - Cubes N Juliennes.jpg" alt="">
+      <img src="images/plate-sw.jpg" alt="">
       <div class="slide-overlay">
         <span>Signature Collection</span>
         <h3>Where Every Dish Becomes Art</h3>
@@ -828,7 +828,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
                 </p>
 
                 <div class="reviewer">
-                    <img src="images/person4.jpg">
+                    <img src="images/enhanced chef image for flyer design.jpg">
                     <div>
                         <h4>Daniel Smith</h4>
                         <span>Guest</span>
@@ -1145,7 +1145,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     </span>
 
     <span>
-        Designed & Developed by Golden Fork
+        Designed & Developed by Jeremiah umoh
     </span>
 
 </div>
@@ -1153,9 +1153,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
 </footer>
 
 <!-- Back To Top -->
-
-<button id="backToTop">
-    ↑
+<button id="backToTop" aria-label="Back to Top">
+    <i class="fas fa-arrow-up"></i>
 </button>
 
 <script>
@@ -1334,32 +1333,33 @@ document.querySelectorAll(".gallery-block").forEach(block => {
 
 });
 
-// TESTIMONIAL SECTION SCRIPT 
+/* TESTIMONIAL SECTION SCRIPT */
 
-const testimonialTrack =
-document.querySelector(".testimonial-track");
+const testimonialTrack = document.querySelector(".testimonial-track");
+const testNext = document.querySelector(".test-next");
+const testPrev = document.querySelector(".test-prev");
 
-document
-.querySelector(".test-next")
-.addEventListener("click",()=>{
+if (testimonialTrack && testNext && testPrev) {
 
-    testimonialTrack.scrollBy({
-        left:400,
-        behavior:"smooth"
+    testNext.addEventListener("click", () => {
+
+        testimonialTrack.scrollBy({
+            left: 400,
+            behavior: "smooth"
+        });
+
     });
 
-});
+    testPrev.addEventListener("click", () => {
 
-document
-.querySelector(".test-prev")
-.addEventListener("click",()=>{
+        testimonialTrack.scrollBy({
+            left: -400,
+            behavior: "smooth"
+        });
 
-    testimonialTrack.scrollBy({
-        left:-400,
-        behavior:"smooth"
     });
 
-});
+}
 
 /* ==========================================
    BACK TO TOP
@@ -1367,32 +1367,33 @@ document
 
 const backToTop = document.getElementById("backToTop");
 
+let lastScrollTop = 0;
+
 window.addEventListener("scroll", () => {
+    const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
 
-    if(window.scrollY > 450){
-
-        backToTop.classList.add("show");
-
-    }else{
-
+    // Hide near the top
+    if (currentScroll < 250) {
         backToTop.classList.remove("show");
-
+    }
+    // Scrolling down → show button
+    else if (currentScroll > lastScrollTop) {
+        backToTop.classList.add("show");
+    }
+    // Scrolling up → hide button
+    else {
+        backToTop.classList.remove("show");
     }
 
+    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
 });
 
 backToTop.addEventListener("click", () => {
-
     window.scrollTo({
-
-        top:0,
-
-        behavior:"smooth"
-
+        top: 0,
+        behavior: "smooth"
     });
-
 });
-
 </script>
   </body>
   </html>
