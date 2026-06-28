@@ -24,6 +24,37 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
 </head>
 
 <body>
+<div id="pageLoader">
+
+    <div class="loader-ring">
+        <div class="loader-logo">
+            ✦
+        </div>
+
+    </div>
+
+    <h2>GOLDEN FORK</h2>
+
+    <div class="loader-line">
+        <span></span>
+    </div>
+
+    <p>
+
+        Preparing your dining experience
+
+        <span class="dots">
+
+            <span>.</span>
+            <span>.</span>
+            <span>.</span>
+
+        </span>
+
+    </p>
+
+</div>
+  
 
   <!-- ============================================
        NAVBAR
@@ -1415,6 +1446,36 @@ backToTop.addEventListener("click", () => {
         behavior: "smooth"
     });
 
-});</script>
+});
+
+/*==========================================
+COMPULSORY PREMIUM LOADER
+==========================================*/
+
+const pageLoader = document.getElementById("pageLoader");
+
+document.body.style.overflow = "hidden";
+
+// Minimum time the loader must stay visible
+const minimumTime = 2500;
+
+const startTime = Date.now();
+
+window.addEventListener("load", () => {
+
+    const elapsed = Date.now() - startTime;
+
+    const remaining = Math.max(0, minimumTime - elapsed);
+
+    setTimeout(() => {
+
+        pageLoader.classList.add("hide");
+
+        document.body.style.overflow = "";
+
+    }, remaining);
+
+});
+</script>
   </body>
   </html>
